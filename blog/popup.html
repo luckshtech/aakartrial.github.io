@@ -1,0 +1,307 @@
+<!--  book a site popup -->
+            <div class="modal fade bs-example-modal-lg medianews_pop bookAsite" id="" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close_faq" data-dismiss="modal">&times;</button>
+                            <div class="col-md-12 modal-box-title">
+                                <h1>Make an Enquiry</h1>
+                                <div class="response_msg"></div>
+                            </div>
+                        </div>
+                        <form id="book_a_site_popup_form">
+                            <div class="modal-body text-center">
+                                <div class="container w100cent ">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="">
+                                                <input type="text" pattern="[a-zA-Z ]+"  oninvalid="this.setCustomValidity('Only alphabets are allowed.')" oninput="this.setCustomValidity('')" maxlength="40" name="name" id="name" class="w100cent nameError" placeholder="Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="">
+                                                <input type="text" oninvalid="this.setCustomValidity('Mobile no. entered is invalid.')" oninput="this.setCustomValidity('')" minlength="10" type="text" pattern="[0-9 ]+" name="contact_no" maxlength="10" id="mobile" class="w100cent contact_noError" placeholder="Mobile No." required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="">
+                                                <input type="email"  oninvalid="this.setCustomValidity('Email entered is invalid.')" oninput="this.setCustomValidity('')" maxlength="50" name="email" id="email" class="w100cent emailError" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="">
+                                                <div class="g-recaptcha" data-sitekey="6Le9WyYTAAAAAChxDsxnmlOpq66J71fyA2UuEsOe"></div>
+                                                <div class="error_msg captchaError" style="text-align: left;"></div>
+                                            </div>
+
+                                        </div>
+                                        
+                                            <div class="col-xs-12 col-sm-12 h83">
+                                            <div >
+                                                <input name="submit" type="button" class="btn btn-primary btn_common btn_white2 popup_form_submit" value="Submit">
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="">
+                                                <input type="text" name="project_name" readonly value="" class="w100cent modal_project_name project_nameError">
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="col-xs-12 col-sm-6 " style="float:right;" >
+
+                                            <div class="">
+
+                                                <input type="text" name="project_city" readonly value="" class="w100cent modal_project_city project_cityError text-capitalize">
+
+                                            </div>
+
+                                        </div>
+                                        
+
+
+                                        <!-- <div class="form_contact margintop20px pull-left capcha_box_div">
+                                            
+                                        </div> -->
+
+
+                                </div>
+                                <!--<div class="container w100cent margintop25pxDesktop">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="text-left">
+                                                <p>Where did you hear about us</p>
+                                                <select name="hear_from_us" class="w100cent">
+                                                    <option value="">Select</option>
+                                                    <option value="Online Ad">Online Ad</option>
+                                                    <option value="Online Portal">Online Portal</option>
+                                                    <option value="Referral">Referral</option>
+                                                    <option value="Broker">Broker</option>
+                                                    <option value="Newspaper">Newspaper</option>
+                                                    <option value="Hoarding">Hoarding</option>
+                                                    <option value="Exhibition">Exhibition</option>
+                                                    <option value="Emailer/SMS">Emailer/SMS</option>
+                                                    <option value="Your Company HR">Your Company HR</option>
+                                                    <option value="Social media">Social Media</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                                <div class="error_msg hearfromusError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 h83">
+                                            <div class=" setsubmitbtn-prop">
+                                                <input type="button" class="btn btn-primary btn_common btn_white2 popup_form_submit" value="Submit">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>--->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- book a site end -->
+            
+            
+            
+            <script type="text/javascript">
+            
+            
+                    
+            
+                $(function () {
+
+
+                    $('.bookasite_popup').on('click', function () {
+                        var popupId = $(this).attr('data-popup');
+                        $('.medianews_pop').attr('id', 'bookAsite-' + popupId);
+                        $('.modal_project_name').val($(this).attr('data-projectname'));
+                        $('.modal_project_city').val($(this).attr('data-city'));
+                        $('#bookAsite-' + popupId).modal('show');
+                    });
+
+                    $('.popup_form_submit').on('click', function () {
+
+                        var email = document.getElementById('email');
+                        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                        var mail_err = true;
+                       
+                        if(filter.test(email.value))
+						{
+							mail_err = false;
+						}
+						else
+						{
+							//mail_err = true;
+							mail_err = false;
+							//alert('Please provide a valid email address');
+				    		//email.focus;
+						}
+
+                        if($("#book_a_site_popup_form")[0].checkValidity() && (mail_err==false))
+                        {
+                            // alert("Validation pass");
+                            // alert($("#mobile").val().length);
+                            $('.w100cent').removeClass('form_error_msg').attr('placeholder', '');
+                            var formData = $('#book_a_site_popup_form').serialize();
+                           // console.log(formData.name.value);
+                            var name =  $('input[name="name"]').val();
+                            var email = $('input[name="email"]').val();
+                            var mobile = $('input[name="contact_no"]').val();
+                            
+                            var flg1=0;
+                            if(name=='' || !name.match(/^[a-z A-Z]+$/))
+                            {
+                                alert('Name cannot be empty and can have only alphabets.');
+                                $("#name").focus();
+                                flg1=1;
+                            }
+                            
+                                                
+                            // if((mobile=='' || mobile.length!==10) && flg1==0)
+                            // {
+                            //  alert('Mobile cannot be empty and can have only 10 digits.');
+                            //  $("#mobile").focus();
+                            //  flg1=1;
+                            // }
+                            
+                            if(email=='' && flg1==0)
+                            {
+                                alert('Email cannot be empty.');
+                                $("#email").focus();
+                                flg1=1;
+                            }
+                            
+                            if(flg1==0)
+                            {
+                                $('.popup_form_submit').prop('disabled',true);
+                                
+                                                            //var site =$('input[name="project_name"]').val().replace("Rohan ","");
+                                
+                                var source = 'Own Website';//
+                                var project_city = $('input[name="project_city"]').val();
+                                var sourcedetails = '-'; //$('select[name="hear_from_us"] option:selected').val();
+                                var typeofunit = '-';
+                                var type = 'U';
+                                var keyword = '-';
+                                var matchtype = '-';
+                                var creative ='-';
+                                var placement = '-';
+                                var model = '-';
+                                var campaigntype ='-';
+                                var  utm_source ='-';
+                                var utm_medium = '-';
+                                var gclid = '-';
+                                
+                                //alert(formData);
+                                
+                                var project_city_lower = project_city.toLowerCase();
+                                if(project_city_lower=='pune')
+                                {
+                                    var site =$('input[name="project_name"]').val().replace("Rohan ","");                       
+                                    var url1="https://handler.rohanbuilders.com/submitapi.aspx/PostEnquiryWebsite";
+                                    var data1="{name: '" + name + "',email: '" + email + "', mobile: '" + mobile + "', site: '" + site + "', source: 'Own Website',sourcedetails: 'WEBSITE'}";
+                                }
+                                else
+                                {
+                                    var site =$('input[name="project_name"]').val();
+                                    var url1="https://api-in21.leadsquared.com/v2/LeadManagement.svc/Lead.Capture?accessKey=u$ra0e3a504a9b56b379227ebf45a32b058&amp;secretKey=97ef22fb300a001f32ec7d426d482dea0dff2492";
+                                    var data1 = JSON.stringify([
+                                        {
+                                            "Attribute": "EmailAddress",
+                                            "Value": email
+                                        },
+                                        {
+                                            "Attribute": "FirstName",
+                                            "Value": name
+                                        },
+                                        {
+                                            "Attribute": "Phone",
+                                            "Value": mobile
+                                        },
+                                        {
+                                            "Attribute": "mx_Project",
+                                            "Value": site
+                                        },                              
+                                        {
+                                            "Attribute": "Source",
+                                            "Value": "WEBSITE"
+                                        }
+                                        
+                                    ]);                         
+                                }
+                                
+                                //alert(data1);
+                                //alert(url1);
+                                
+                                $.ajax({
+                                    async: false,
+                                    processing: true,
+                                    type: "POST",
+                                    contentType: "application/json; charset=utf-8",
+                                    url: url1,
+                                    data: data1,
+                                    dataType: "json",
+                                    success: function (data) {
+                                        
+                                        
+                                        //alert('submitted');
+                                        
+                                            $.ajax({
+                                            type: "POST",
+                                            url: "../bookasite.php",
+                                            data: formData,                         
+                                            beforeSend: function(){ /* $("#login").html('Connecting...'); */ },
+                                            success: function(data){
+                                                //alert(data);              
+                                                if(data=='success')
+                                                {
+                                                    //alert('submit2');
+                                                    window.location.href = "../thankyou.html";
+                                                }
+                                                else
+                                                {
+                                                    $('.response_msg').html('<div class="alert alert-danger">Invalid Error Occured!</div>');
+                                                }
+                                            }
+                                            }); 
+                                        
+                                    }
+                                });
+                                
+                            }
+                        }
+                        else
+                        {
+                            $("#book_a_site_popup_form")[0].reportValidity();
+                        }
+                        
+                       
+                        
+                        
+                        
+                        
+                        // Code
+                        
+                        
+                    });
+
+                    
+
+                    
+                    
+                
+
+
+                    
+                    
+                    
+                });
+                
+            </script>

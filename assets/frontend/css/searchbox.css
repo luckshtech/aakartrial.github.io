@@ -1,0 +1,196 @@
+.searchinout::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #9e9d9d;
+}
+
+.searchinout:-moz-placeholder {
+    /* Firefox 18- */
+    text-transform: uppercase;
+    color: #9e9d9d;
+}
+
+.searchinout::-moz-placeholder {
+    /* Firefox 19+ */
+    text-transform: uppercase;
+    color: #9e9d9d;
+}
+
+.searchinout:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: #9e9d9d;
+}
+
+.subNavTabs {
+    top: 30px;
+}
+
+footer .margintop16vhDesktop {
+    margin-top: 24vh;
+}
+
+.error_msg {
+    color: red;
+}
+
+.activeproject {
+    border: 1px solid #fff;
+}
+
+.proj_catagories {
+    display: none;
+}
+
+.showproject {
+    display: block !important;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .wow {
+        visibility: visible !important;
+    }
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*padding: 2px 30px 2px 2px;*/
+    border: none;
+}
+
+
+/*select {
+            overflow:hidden;
+            width: 120%;
+        }*/
+
+select::-ms-expand {
+    display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .searchinout {
+        width: 160px !important;
+    }
+    .subNavTabs_about {
+        background: none !important;
+        padding: 4px 10px !important;
+    }
+    .subNavTabs {
+        padding: 7px 10px !important;
+    }
+    .subNavTabs .nav-tabs {
+        padding-left: 30px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    a.menuBreadBar {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .overlaymenu .inner_residental .proj_catagories a {
+        font-size: 14px !important;
+        padding: 2px;
+    }
+    .overlaymenu .menu-footer-items .fa {
+        padding: 0px 10px;
+        font-size: 24px !important;
+    }
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.ui-autocomplete {
+    display: block;
+    max-height: 95px;
+    overflow: auto;
+    z-index: 999999;
+    overflow: auto;
+    width: 200px !important;
+    position: fixed;
+}
+
+.ui-status-focus, .ui-widget-content .ui-state-focus {
+    color: #FFFFFF;
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    border-bottom-color: transparent;
+}
+
+
+/* IE 6 doesn't support max-height
+     * we use height instead, but this forces the menu to always be this tall
+     */
+
+* html .ui-autocomplete {
+    height: 95px;
+}
+
+.overlaymenu .logoAndCloseMenuSection .navbar-brand {
+    left: 0px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .modal-box-title h1 {
+        font-size: 24px !important;
+        margin-bottom: 0;
+    }
+    .border-right-white {
+        border-right: 1px solid rgba(255, 255, 255, 0.02);
+    }
+}
+
+body.modal-open {
+    /*overflow: hidden;
+        position:fixed;
+        width: 100%;*/
+}
+
+.mobile_navigation li {
+    padding: 0 !important;
+}
+
+.mobile_navigation li a {
+    padding: 10px 5px !important;
+    display: block;
+}
+
+.marginleft25cent {
+    margin-left: 25.46%;
+}

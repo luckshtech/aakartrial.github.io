@@ -1,0 +1,1279 @@
+<html>
+<!-- Mirrored from www.rohanbuilders.com/nri-corner.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jul 2020 09:52:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TR2TZG9');</script>
+<!-- End Google Tag Manager -->
+
+    <title>NRI Corner - Information & FAQ about Real Estate for NRI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Get all information about Real Estate for NRI from Rohan Builders. We help to resolve your queries, doubts & offer solutions to our prestigious NRI clients.">
+    <meta name="keywords" content="">
+    
+    <!-- config_item('assets') -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    
+    <script src="assets/frontend/js/app.js"></script>
+    <link href="assets/frontend/css/app.css" rel="stylesheet">
+    <link rel="icon" href="assets/frontend/images/fav_icon.jpg" type="image/gif" sizes="16x16">
+    <script type="text/javascript">
+        var base_url = 'index-2.html';
+    </script>
+
+    
+
+    <style type="text/css">
+       
+        @media screen and (min-width: 768px){
+             a.headerpolicyLink {
+                    color: #ddd;
+                    /*font-size: 20px;*/
+                    font-size: 16px;
+                    position: absolute;
+                    right: 22%;
+                    
+                    /* transform: translateX(-50%); */
+                    top: 54px;;
+                    text-decoration: none;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+            a.headerpolicyLink:hover{
+                color: #fafafa;
+            }
+       }
+        @media screen and (max-width: 768px){
+             a.headerpolicyLink {
+                    color: #ddd;
+                    font-size: 12px !important;
+                    position: absolute;
+                    right: 17px;
+                    top: 36px !important;
+                    text-decoration: none;
+                    cursor: pointer;
+                    outline: none;
+                }
+       }
+       @media screen and (max-width: 320px){
+             a.headerpolicyLink {
+                    
+                    font-size: 10px !important;
+                    
+                }
+       }
+       @media only screen and (min-width: 361px) and (max-width: 480px){
+            .home-banner-mobile-view .sub_catogory_ttl ul {
+                   margin: 0px 6% !important;
+                  
+                }
+            }
+@media only screen and (max-width: 1400px) and (min-width: 1201px){
+.headerpolicyLink {
+    right: 25% !important;
+}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+.headerpolicyLink {
+    right: 28% !important;
+}
+}
+
+        a.headerpolicyLink:hover{
+                color: #fafafa;
+            }    
+    </style>
+
+</head>
+
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-55178657-1', 'auto');
+    ga('send', 'pageview');
+
+    var project_slug = '';
+    var project_city = '';
+
+    $(document).ready(function () {
+        var downArrow = $(".up_down_Arrow");
+        var enqureNow = $(".enquireNowBtn_residential");
+        var navTabAct = $(".nav-tabs li");
+        new WOW().init();
+
+        $.scrollify({
+            section: ".block-sections",
+            sectionName: "section-name",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset: 0,
+            scrollbars: true,
+            before: function () {
+                var hash_k = window.location.hash;
+                
+                var currentSlide = $.scrollify.current();
+                
+                
+                if (currentSlide.context.id == "footer") {
+                    downArrow.hide();
+                    enqureNow.hide();
+                    navTabAct.removeClass('active');
+                    
+                } else {
+                    downArrow.show();
+                    enqureNow.show();
+                }
+            },
+            after: function () {
+                
+            },
+            afterResize: function () {}
+        });
+
+        $(".up_down_Arrow").on('click', function (event) {
+            $.scrollify.next();
+        });
+
+        $('.residentalProjects').bxSlider({
+            nextSelector: '#residentalProjects-proj-next',
+            prevSelector: '#residentalProjects-proj-prev',
+            nextText: '→',
+            prevText: '←',
+            pager: false,
+            minSlides: 3,
+            maxSlides: 3
+        });
+        $('.industrialProjects').bxSlider({
+            nextSelector: '#industrialProjects-proj-next',
+            prevSelector: '#industrialProjects-proj-prev',
+            nextText: '→',
+            prevText: '←',
+            pager: false,
+            minSlides: 1,
+            maxSlides: 1
+        });
+        $('.infrastructureProjects').bxSlider({
+            nextSelector: '#infrastructureProjects-proj-next',
+            prevSelector: '#infrastructureProjects-proj-prev',
+            nextText: '→',
+            prevText: '←',
+            pager: false,
+            minSlides: 1,
+            maxSlides: 1
+        });
+
+
+        
+
+        /* On sub nav click */
+        $('.smoothscroll[href*="#"]:not([href="#"])').click(function () {
+            var scrollposi = 0;
+            if (window.innerWidth < 768) {
+                scrollposi = 240;
+            }
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - scrollposi
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        
+        $('.projectcity').on('click', function (e) {
+            e.preventDefault();
+            var projectcity = $(this).attr('data-id');
+            $('.projectcity').removeClass('activeproject');
+            $(this).addClass('activeproject');
+        });
+
+        
+        $('.magglassSearchmobile').on('click', function (e) {            
+            e.preventDefault();
+            $('#siteSearchForm').submit();
+        });
+        $('.magglassSearch').on('click', function (e) {
+            e.preventDefault();
+
+            $('#siteSearchFormMobile').submit();
+        });
+        
+        /* for equalheight */
+        equalHeight($('.SameHeightBox'));
+
+
+        $(".OnlyNumber").keypress(function (e) 
+        {
+           if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) 
+            {
+                return false;
+            }
+        });
+
+        
+    });
+
+</script>
+<style>.display_flex{ display:flex !important; }</style>
+<!-- AutoComplete Js -->
+
+
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>-->
+<!--<script type="text/javascript" src="https://www.rohanbuilders.com/assets/frontend/js/jquery-ui.min.js"></script>-->
+
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/searchbox.css" />
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR2TZG9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!-- <a class="headerpolicyLink" target="_blank" href=" https://www.rohanbuilders.com/blog/price-protection-on-homes-a-long-overdue">PRICE PROTECTION POLICY</a> -->
+            <div class="navbarCustomTop hidden-xs">
+                <div class="container-fluid">
+                    <div class="col-sm-6">
+                        <!--<span class="f12px">  For site visit and other queries call : 91-20-7101 7101 (Pune) / 91-80-2520 3520 (Bangalore)</span>-->
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <a href="https://www.facebook.com/RohanBuildersIndia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/rohanbuilders" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+						<!-- <a href="https://www.instagram.com/rohanbuilders/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                        <a href="https://plus.google.com/+RohanBuildersIndia" target="_blank" class=""><i class="fa fa-google-plus anchorlinks" aria-hidden="true"></i> </a> -->
+						<a href="https://www.linkedin.com/company/rohanbuilders" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+						<a href="https://www.youtube.com/c/RohanBuildersIndia" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						
+						
+						<span class="top-nav-divider"> | </span> <a href="awards-recognition.html"><span class="f12px">Awards</span></a>
+						<span class="top-nav-divider"> | </span> <a href="testimonials.html"><span class="f12px">Testimonials</span></a>
+                        <span class="top-nav-divider"> | </span> <a href="contactus.html"><span class="f12px">Contact Us</span></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <span class="visible-xs">
+                    
+                    <!-- <form action="https://www.rohanbuilders.com/search" method="GET" id="mobilesiteSearchForm">
+                        <div class="input-group mobileCustomInputGroup " style="">
+                            <input type="text" class="form-control searchinout" placeholder="Search" aria-describedby="basic-addon2">
+                            <input type="hidden" style="display: none;" name="search" value="1">
+                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                    </form> -->
+
+                    </span>
+                    <span class="navbar-toggle collapsed " data-toggle="collapse" style="margin-right: 0px;">
+                         
+                        <a href="#" class="menuBreadBar"> MENU <i class="fa fa-bars" aria-hidden="true"></i></a>
+                        </span>
+                    <a class="navbar-brand" href="index-2.html"><img src="assets/frontend/images/logo_rohan.png" alt="logo"></a>
+                </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="margin-top: 17px;">
+                     <!--
+					<li>
+                        <form action="https://www.rohanbuilders.com/search" method="GET" id="siteSearchForm">
+                            <div class="input-group">
+                                <input type="text" class="form-control searchinout searchPropNew search_textbox" name="query" placeholder="Quick Search" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Quick Search'" aria-describedby="basic-addon2" value="">
+                                <input type="hidden" style="display: none;" name="search" value="1">
+                                <span class="input-group-addon magglassSearchmobile" id="basic-addon2"><i class="fa fa-search" aria-hidden="true" style="color:#9e9d9d;"></i></span>
+                            </div>
+                        </form>
+                    </li>
+					-->
+					<li>
+					<script>
+						  (function() {
+							var cx = '004115353322706870311:m6pcbecgunu';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						  })();
+						</script>
+						
+						<div style="width:300px; margin-top:-12px;">
+						<gcse:search></gcse:search>
+						</div>
+						
+						
+						<style>
+						
+							.cse .gsc-control-cse,
+							.gsc-control-cse {
+							  background-color:transparent !important;
+							  border:none;
+							  float:right;
+							  font-family:inherit;
+							}
+							
+							form.gsc-search-box,table.gsc-search-box
+							{
+								margin-bottom:0px !important;
+								width:200px;
+								
+							}
+							
+							.gsc-search-box .gsc-input
+							{
+								padding:0px 4px 0px 6px !important;
+							}
+							
+							#gsc-iw-id1
+							{
+								border-width: 0px !important;
+								height: auto !important;
+								box-shadow:none !important;
+							}
+							
+							#gs_tti50
+							{
+								padding:0px !important;
+							}
+							
+							#gsc-i-id1
+							{
+								height:33px !important;
+								padding:0px !important;
+								background:none !important;
+								text-indent:0px !important;
+							}
+							
+							.gsib_b
+							{
+								display:none;
+							}
+							
+							button.gsc-search-button
+							{
+									display:block;
+									width:13px !important;
+									height:13px !important;
+									border-width:0px !important;
+									margin:0px !important;
+									padding: 10px 6px 10px 13px !important;
+									outline:none;
+									cursor:pointer;
+									box-shadow:none !important;
+									box-sizing: content-box !important;
+									background:none;
+									
+							}
+							
+							button.gsc-search-button:hover
+							{									
+									background:none;
+							}
+							
+							.gsc-branding
+							{
+								display:none !important;
+							}
+							
+							.gsc-control-cse,#gsc-iw-id1
+							{
+								background-color:transparent !important;
+							}
+							
+							
+													</style>
+					</li>
+                    <li style="margin-top: 4px;"><a class="menuBreadBar" style="cursor:pointer;">MENU <i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="overlaymenu" style="flex-direction: column; overflow: auto;">
+        <div class="logoAndCloseMenuSection " style="flex-grow: 0;">
+            <a class="navbar-brand" href="index-2.html"><img src="assets/frontend/images/logo_rohan.png" alt="logo"></a>
+
+            <div class="navbar">
+                <div class="navbar-nav overlaynav">
+                    <!--<form action="https://www.rohanbuilders.com/search" method="GET" id="siteSearchFormMobile">
+                        <div class="input-group anchorlinks" style="position: relative;">
+                            <input type="text" class="form-control searchinout searchPropNew anchorlinks search_textbox" name="query" placeholder="Quick Search" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Quick Search'" aria-describedby="basic-addon2">
+                            <ul class="ui-autocomplete">
+
+                            </ul>
+                            <input type="hidden" style="display: none;" name="search" value="1">
+                            <span class="input-group-addon magglassSearch anchorlinks" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                    </form>-->
+                </div>
+            </div>
+            <img src="assets/frontend/images/x_close_overlay.png" class="overlay-closeImage" alt="close">
+        </div>
+        <div class="menu-items margintop16vh" style="flex-grow: 1; margin-top: 20vh;">
+
+            <div><a href="about-rohan-group.html" class="anchorlinks">About Us</a></div>
+            <div><a href="plushome.html" class="anchorlinks">PLUS HOME</a></div>
+
+            <div><a class="anchorlinks residentail_link" style="position: relative; cursor:pointer;">Residential <img style="position: absolute;top: 12px;" class="anchorlinks" src="assets/frontend/images/menu_down_arrow.png" alt="arrow"></a></div>
+            <div class="inner_residental">
+                <div class="">
+                    <a class=" btn btn-primary btn_common btn-transparent f14 projectcity anchorlinks residentail_link_city_click" data-id="pune-projects" href="ongoing-residential-projects-pune.html">Pune</a>
+                    <a class=" btn btn-primary btn_common btn-transparent f14 projectcity anchorlinks residentail_link_city_click" data-id="bangalore-projects ">Bangalore</a>
+                </div>
+                <div class="container proj_catagories projectCatForJs" id="pune-projects">
+                    <div class="col-md-3 marginleft25cent nomarginMobile"> <!--marginleft12cent-->
+                        <div class="row border-right-white nobordersMobile"> <a href="ongoing-residential-projects-pune.html">Ongoing Projects</a> </div>
+                    </div>
+                    <div class="col-md-3" style="display:none;">
+                        <div class="row border-right-white nobordersMobile"> <a href="residentiald6f8d6f8.html?state=upcoming&amp;location=pune">Upcoming Projects</a> </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row"> <a href="completed-residential-projects-pune.html">Completed Projects</a></div>
+                    </div>
+                </div>
+                <div class="container proj_catagories projectCatForJs " id="bangalore-projects">
+                    <div class="col-md-3 marginleft25cent nomarginMobile"><!--marginleft12cent-->
+                        <div class="row border-right-white"> <a href="ongoing-residential-projects-bangalore.html">Ongoing Projects</a> </div>
+                    </div>
+                    <!--<div class="col-md-3 ">
+                        <div class="row border-right-white"> <a href="/residential?state=upcoming&location=bangalore">Upcoming Projects</a> </div>
+                    </div>-->
+                    <div class="col-md-3">
+                        <div class="row"> <a href="completed-residential-projects-bangalore.html">Completed Projects</a></div>
+                    </div>
+                </div>
+            </div>
+            <div><a href="industrial-projects-india.html" class="anchorlinks">Industrial</a></div>
+            <div><a href="infrastructural-projects-india.html" class="anchorlinks">Infrastructure</a></div>
+            <div><a href="contactus.html" class="anchorlinks">Contact Us</a></div>
+
+        </div>
+        <div class="text-center" style="flex-grow: 0; margin-top: 15px;">
+            <div class="menu-footer-items" style="flex-grow: 0; position: relative; bottom: 12px; left:0%; margin:0;">
+                <ul class="">
+                    <li><a href="blog.html" class="anchorlinks f14">Blog</a></li>
+                    <li><a href="awards-recognition.html" class="anchorlinks f14">Awards</a></li>
+                    <li><a href="nri-corner.html" class="anchorlinks f14">NRI</a></li>
+                    <li><a href="media.html" class="anchorlinks f14">Media & PR </a></li>
+                    <li><a href="testimonials.html" class="anchorlinks f14">Testimonials</a></li>
+                    <li><a href="corporate-social-responsibility.html" class="anchorlinks f14">CSR</a></li>
+                    <li><a href="sustainability.html" class="anchorlinks f14">Sustainability</a></li>
+                    <li><a href="careers.html" class="anchorlinks f14">Careers</a></li>
+                </ul>
+                <div>
+                    <a href="https://www.facebook.com/RohanBuildersIndia" target="_blank" class=""><i class="fa fa-facebook anchorlinks" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/rohanbuilders" target="_blank" class=""> <i class="fa fa-twitter anchorlinks" aria-hidden="true"></i> </a>
+                    <!-- <a href="https://plus.google.com/+RohanBuildersIndia" target="_blank" class=""><i class="fa fa-google-plus anchorlinks" aria-hidden="true"></i> </a>
+                    <a href="https://www.instagram.com/rohanbuilders/" target="_blank" class=""><i class="fa fa-instagram anchorlinks" aria-hidden="true"> </i></a> -->
+                    <a href="https://www.linkedin.com/company/rohanbuilders" target="_blank" class=""> <i class="fa fa-linkedin-square anchorlinks" aria-hidden="true"></i> </a>
+                    <a href="https://www.youtube.com/c/RohanBuildersIndia" target="_blank" class=""> <i class="fa fa-youtube anchorlinks" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            <script>
+    $(document).ready(function () {
+
+
+        $('.projSlider').bxSlider({
+            nextSelector: '#proj-next',
+            prevSelector: '#proj-prev',
+            nextText: ' →',
+            prevText: '←',
+            pager: false,
+            minSlides: 1,
+            maxSlides: 1
+        });
+
+        $(function () {
+            $('.smoothscroll[href*="#"]:not([href="#"])').click(function () {
+                $(".smoothscrolltabs li").removeClass("active");
+                var scrollposi = 0;
+                if (window.innerWidth < 768) {
+                    scrollposi = 240;
+                }
+                $(this).parent().addClass('active');
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - scrollposi
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        $(document).on("scroll", onScroll);
+        /*  $('.overview_link').on("click", function(){
+              
+          });*/
+
+        $("#gallery_video_carousel").carousel({
+            interval: false,
+            pause: true
+
+        });
+
+
+        $(".topMobileNav").click(function () {
+            $("#mobile_nav_box").fadeIn("100");
+
+        });
+
+        $(".mobile_navigation").click(function () {
+            $("#mobile_nav_box").fadeOut("100");
+
+        });
+        $(".mobile_navigation a").click(function () {
+            $("#mobile_nav_box").fadeOut("100");
+
+        });
+
+        function toggleAndChangeText() {
+            $('#divToToggle').toggle();
+            if ($('#divToToggle').css('display') == 'none') {
+                $('#aTag').html('Collapsed text mode &#9658');
+            } else {
+                $('#aTag').html('Expanded text mode &#9660');
+            }
+        }
+
+
+
+
+    });
+
+    function onScroll(event) {
+
+        var scrollPos = $(document).scrollTop();
+        $('.smoothscrolltabs li a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $(this).parent().removeClass("active");
+                currLink.parent().addClass("active");
+            } else {
+                currLink.parent().removeClass("active");
+            }
+        });
+    }
+    $(document).ready(function () {
+        $(function () {
+            $('#callback_Date').datetimepicker({
+                language: 'en'
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+
+	@media screen and (max-width: 768px){
+		.margin-top-mob-ants{margin-top: 0px !important; }
+		.block-sections {
+   			height: auto !important;
+   		}
+		.margintop-mob-nri{margin-top: 95px !important;}
+	}
+
+</style>
+
+<div class="col-sm-12 about_nav_heading about_nav_heading_small">
+    <div class="topMobileNav">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div id="mobile_nav_box" class="mobile_navigation" style="display:none;">
+        <div class="close_btn"><img src="assets/frontend/images/aboutpage_image/closeIcon.png"></div>
+        <ul>
+            <li>
+                <h2>NRI Corner</h2></li>
+            <li><a class="smoothscroll " href="#overview">Overview</a></li>
+            <li><a class="smoothscroll " href="#faqs">Faq's</a></li>
+            <!--<li class=""><a class="smoothscroll " href="#enquiryForm"> Form</a></li>-->
+            <!--<li><a class="smoothscroll" href="#ourstory">Our story</a></li>-->
+        </ul>
+
+    </div>
+
+    <div class="col-sm-12 about_heading">
+        <h1>NRI Corner</h1>
+    </div>
+
+    <div class="col-sm-12 subNavTabs_about hidden-xs">
+        <div class="row">
+            <ul class="nav nav-tabs smoothscrolltabs">
+                <li class="active"><a class="smoothscroll " href="#overview">Overview</a></li>
+                <li class=""><a class="smoothscroll " href="#faqs"> FAQ’s</a></li>
+                <!--<li class=""><a class="smoothscroll " href="#enquiryForm"> Form</a></li>-->
+                <!--<li class=""><a class="smoothscroll" href="#ourstory">Our story</a></li>
+                    <li class=""><a class="smoothscroll" href="#location">Location</a></li>
+                    <li class=""><a class="smoothscroll" href="#gallery">Gallery</a></li>
+                    <li class=""><a class="smoothscroll" href="#masterplan">Master plan</a></li>
+                    <li class=""><a class="smoothscroll" href="#amenities">Amenities</a></li>
+                    <li><a class="smoothscroll" href="#">Download brochure</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="overview">
+    <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="overview">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="col-sm-12 col-xs-12 col-md-7 col-lg-7 margintop245px margintop-mob-nri mob-row-padding-zero">
+                        <div class="about_Desc_Box animated margintop2px" style="">
+                            <div class="about_text">
+<p>Rohan Group has been building insightful life spaces since 1993. So far, we have undertaken 21 residential projects spanning over 3.2 million sq ft of developed space in Bangalore and Pune. This includes budget & luxury apartments, villaments, and multi-storey houses. All the residential spaces are built using our proprietary design concept called PLUS homes. Timely completion with great attention to detail has always been the hallmark of Rohan.</p>
+<p>We have a dedicated team of experts to help our NRI clients with all real-estate related know-how and procedures. Help us with your requirement and we will certainly get back to you with the best solution.</p>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+<div class="about_Desc_Box animated  row">
+<div class="nri_document_list">
+<h5>As an NRI you need following documents to buy a property in India:</h5>
+<ol>
+<li>Power of attorney in the name of someone in India who can carry out legal & financial proceedings on your behalf</li>
+<li>Your PAN Card</li>
+<li>In case your PAN card is not available, then a copy of your passport.</li>
+<li>An NRE or NRO account via which you can transact with the builder</li>
+</ol>
+</div>
+</div>
+</div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div id="faqs"> 
+        
+        <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="faqs1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 margintop245px margin-top-mob-ants mob-row-padding-zero">
+                            <div class="nri_faqs">
+
+                                                                    <h3 class="CustomPaddingForHeading">FAQ’s</h3>
+                                                                
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q1.Who is an NRI?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        A Non Resident Indian (NRI) as per India’s Foreign Exchange Management Act 1999 (FEMA), is an Indian citizen or Foreign National of Indian Origin resident outside India for purposes of employment, carrying on business or vocation in circumstances as would indicate an intention to stay outside India for an indefinite period. An individual will also be considered NRI if his stay in India is less than 182 days during the preceding financial year.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q2.Who is a PIO?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        A person who is not a citizen of India is deemed to be of Indian origin if he is not a citizen of Pakistan or Bangladesh and if • he at any time held an Indian passport; or • he or either of his parents or any of his grandparents was a citizen of India by virtue of the Constitution of India or Citizenship Act, 1955. 
+
+A spouse (not being a citizen of Pakistan or Bangladesh) of an Indian citizen or of a Person of Indian Origin is also treated as a Person of Indian Origin for the purpose of NRI deposits if the accounts are held jointly with the NRI/PIO spouse. PIOs are extended the same facilities for bank account maintenance in India as NRIs and are also, for such purposes, called by the generic name as NRIs.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q3.What facilities are available for NRIs and OCBs?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        NRIs/OCB's are granted the following facilities:
+1. Maintenance of bank accounts in India
+2. Investments in securities/shares of, and deposits with, Indian firms/companies
+3. Investments in immovable properties in India                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q4.Who can purchase an immovable property in India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        A.1 Under the general permission available, the following categories can freely purchase immovable property in India:
+i) Non-Resident Indian (NRI) - that is a citizen of India resident outside India
+ii) Person of Indian Origin (PIO) - that is an individual (not being a citizen of Pakistan or Bangladesh or Sri Lanka or Afghanistan or China or Iran or Nepal or Bhutan), who
+1. At any time, held Indian passport, or
+2. Who or either of whose father or grandfather was a citizen of India by virtue of the Constitution of India or the Citizenship Act, 1955 (57 of 1955).  The general permission, however, covers only purchase of residential and commercial property.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q5.Can a NRI/PIO acquire agricultural land/plantation property/farm house in India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        Since general permission is not available to NRI/PIO to acquire agricultural land/plantation property/farm house in India, such proposals will require specific approval of Reserve Bank and the proposals are considered in consultation with the Government of India                                    </div>
+                                </div>
+                               
+                                
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="faqs2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 margintop245px margin-top-mob-ants mob-row-padding-zero">
+                            <div class="nri_faqs">
+
+                                                                
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q6.Can NRI’s sell the properties they hold in India without the reserve bank’s permission?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        NRI’s are allowed to do so.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q7.Can NRI’s acquire or dispose-off residential properties by way of gifts?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        The Reserve Bank grants general permission to NRIs to acquire or dispose of NRI India Properties by way of gift from or to a relative who may be an Indian citizen or a person of Indian origin (PIO) whether resident in India or not.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q8.Can NRI’s acquire commercial properties in India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        Under the general permission granted by the Reserve Bank, property other than agricultural land/farm house/plantation property can be acquired by NRIs provided the purchase consideration is met either out of inward remittances in foreign exchange through normal banking channels or out of funds from the purchaser's NRE/FCNR accounts maintained with banks in India and a declaration is submitted to the Central Office of Reserve Bank in form IPI 7 within a period of 90 days from the date of purchase of the property/final payment of purchase consideration.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q9.Can NRI’s obtain loans for the purpose of acquiring a residential or commercial property in India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        The Reserve Bank has granted some general permission to certain financial institutions providing housing finance e.g. HDFC, LIC Housing Finance Ltd., etc, and authorized dealers to grant housing loans to NRI nationals for acquisition of a NRI house/flat for self-occupation subject to certain conditions. Criteria regarding the purpose of the loan, margin money and the quantum of loan will be at par with those applicable to resident Indians. Repayment of the loan should be made within a period not exceeding 15 years, out of inward remittance through banking channels or out of funds held in the investors' NRE/FCNR/NRO accounts.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q10.What is power of attorney?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        • A Power Of Attorney (POA) or letter of attorney is a written authorization to represent or act on another's behalf in private affairs, business, or some other legal matter, sometimes against the wishes of the other. The person authorizing the other to act is the principal, grantor, or donor (of the power).
+• A Power Of Attorney is not an instrument of transfer in regard to any right, title or interest in an immovable property.
+• A Power Of Attorney, or letter of attorney, is a document that authorizes another person, known as the agent or attorney-in-fact—usually a legally competent relative or close friend over 18 years old—to handle any combination of financial, legal and health care decisions. A power of attorney is also referred to as a POA. Generally, one chooses a POA as a provision if he or she becomes incapacitated.
+Types of Power of Attorney
+• A Power Of Attorney (POA) is an instrument that is used by people to confer authority on somebody else to legally act on their behalf. POA are of two types.
+• Special Power of Attorney (SPA), while an SPA is used for transfer of a specific right to the person on whom it is conferred.
+• General Power of Attorney (GPA), the GPA authorizes the holder to do whatever is necessary.
+• There is no sale clause of immovable property mentioned in POA (notarized)
+• Registered POA from registration office allows sale clause and POA to any one
+Following are the important things to be kept in mind while executing the POA
+• Customer Prepares POA as per defined format.
+• Executant has to paste his/her photograph along with signature on each page.
+• Authenticate/adjudicate the POA from Indian Embassy or local authority.
+• Send authenticated/adjudicated POA in India.
+• In India, the POA holder has to paste his/her photograph along with his/her left hand thumb impression and signature.
+• Then this document will have to be stamped for Rs. 500/- (ESBTR, Franking, Stamp paper) and notarized from a Registered Notary. Please ensure that a stamp of “Before Me” is affixed on the document.
+• POA holder and executants Photo ID attach before Notary.                                    </div>
+                                </div>
+                               
+                                
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="faqs3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 margintop245px margin-top-mob-ants mob-row-padding-zero">
+                            <div class="nri_faqs">
+
+                                                                
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q11.In what way should the purchase consideration for the immovable property be paid under the general permission?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        The purchase consideration should be met either out of inward remittances in foreign exchange through normal banking channels or out of funds from any non-resident accounts maintained with banks in India.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q12.Is there any limit on the number of housing properties that may be purchased by an NRI?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        There are no limits on the number of residential properties that may be bought by an NRI. However, repatriation (the process of converting a foreign currency into the currency of one’s own country) is allowed only in respect of two such properties.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q13.Can sale proceeds of such property if and when sold be remitted out of India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        In the event of sale of immovable property other than agricultural land/farm house/plantation property in India by a NRI or PIO, the authorized dealer may allow repatriation of the sale proceeds outside India, provided all the following conditions are satisfied:
+The immovable property was acquired by the seller in accordance with the provisions of the Exchange Control Rules/Regulations/Law in force at the time of acquisition, or the provisions of the Regulations framed under the Foreign Exchange Management Act, 1999; 
+NRIs/PIOs can effect remittance of sale proceeds of immovable property in India irrespective of the period for which the property was held. The sale proceeds allowed to be repatriated should, however, not exceed the foreign exchange brought in to acquire the said property. 
+In case of residential property, the repatriation of sale proceeds is restricted to not more than two such properties, if the property was purchased from funds held in NRE Account.
+The amount sought to be repatriated abroad should not exceed the amount paid for acquisition of the immovable property in the foreign exchange received through normal banking channels or out of funds held in FCNR or NRE Account. In case of investment out of NRE Account the amount to be calculated as foreign currency is equivalent value as on the date of payment for acquisition of the said property.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q14.Is a single window clearance possible?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        Single window in a real estate project in India may be difficult because of the involvement of several authorities. If it is a multistoried building, you need to get clearance from town planning authorities, clearance on design, elevators, firefighting agencies, etc. Efforts are on to make the process simpler and transparent, though.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q15.How is the sanctioning authority and monitoring authority different in India?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        In some states, the Municipal authority is the ultimate monitoring authority. In smaller states and in non-urban areas, the town and country planning corporation acts as the monitoring authority. In urban areas where most of the construction takes place, the municipal authority wields power in giving the final permission and sanctioning drawings and plans. Clearances on electricity, water supply and other utilities also come from here.                                    </div>
+                                </div>
+                               
+                                
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="faqs4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 margintop245px margin-top-mob-ants mob-row-padding-zero">
+                            <div class="nri_faqs">
+
+                                                                
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q16.What are the loan sanction process and its documentation?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        The documentation required to be submitted by the NRIs are different from the Resident Indians as they are required to submit additional documents, like copy of the passport and a copy of the works contract, etc. and of course NRIs have to follow certain eligibility criteria in order to get Home Loans in India. 
+Another vital document required while processing an NRI home loan is the power of attorney (POA). The POA is important because, since the borrower is not based in India; the Home Finance Company would need a 'representative' 'in lieu of' the NRI to deal with and if needed. Although not obligatory, the POA is usually drawn on the NRI's parents/wife/children/ close relatives or friends. 
+The documents needed for obtaining NRI home loans are Bank specific. General list of documents are as mentioned below:
+• Passport and Visa
+• A copy of the appointment letter and contract from the company employing the applicant.
+• The labour card/identity card (translated in English and countersigned by the consulate) if the person is employed in the Middle East Salary certificate (in English) specifying name, date of joining, designation and salary details.
+• Bank Statements for the last six months
+List of Classified documents for Salaried and Self Employed NRI Applicants. Banks may have specific requirements apart from the below listed documents.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q17.Why do I need to register a property when I buy it?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        When you register the transaction for buying an immovable property, it becomes a public record. If you want to rent, lease, or license the property, then the registration is a necessary process.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q18.Do I need to pay tax if I sell a small apartment to buy a bigger one?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        If you sell the smaller apartment less than two years after buying it in order to buy a bigger apartment, you will need to pay a capital gains tax. On the other hand, if you have owned the current apartment for more than 2 years, you will not need to pay any tax. However, taxation laws are subject to change.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q19.How can I determine the rent or amount of lease for my apartment?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        There are no set rules that will determine the rent for your apartment. However, you can contact us for any help if you want to find out about the current rate in the city for rent in your area.                                    </div>
+                                </div>
+                               
+                                                           
+                                <div class="question_border" style="border-top:1px solid #3c3c3c;">
+                                    <div class="faq_question toggle_question" onClick="faqDtls('ansOne')">
+                                        <span class="question">Q20.How do I if I qualify for a home loan as an NRI?</span>
+                                        <span class="plus">
+                                            <img src="assets/frontend/images/nri/nri_plus.png" style="line-height:1.4;" class="icon_img plus show">
+                                            <img src="assets/frontend/images/nri/nri_minus.png" style="line-height:1.4;" class="icon_img minus hide">
+                                        </span>
+                                    </div>
+                                    <div class="faq_answer faq_ans_HideDiv" id="ansOne" style="dis">
+                                        If you are employed or self-employed abroad, and otherwise live outside India, you are categorized as an NRI. In order to qualify for a home loan, you must have lived in India for 100 days or more in all. You can read more about qualifying for a loan in our NRI section.                                    </div>
+                                </div>
+                               
+                                
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<!-- Enquiry Form -->
+
+<style>
+    .error_msg {
+        color: red;
+    }
+</style>
+
+
+<!--<div id="enquiryForm">
+    <div class=" innerproject-banner plushome_sections block-sections nribg_img" data-section-name="enquiryForm">
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 margintop245px">
+                        <div class="nri_Form"> 
+                            <h3 class="CustomPaddingForHeading">Enquiry Form</h3>
+                            <div class="w100cent ">
+                                <div id="show_msg"></div>
+                                <div class="row">
+                                    <form id="enquiry-form" method="post" class="customForm">
+                                         action="nricorner/nri_enquiry_form" 
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name">Name:</label>
+                                                <input type="text" class="form-control" id="user_name" name="user_name" required>
+                                                <span class="user_nameError error_msg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="text" class="form-control" id="user_email" name="user_email" required>
+                                                <span class="user_emailError error_msg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="contact">Contact Number:</label>
+                                                <input type="text" class="form-control" id="user_mobile" name="user_mobile" required>
+                                                <span class="user_mobileError error_msg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="usr">Preferred Time to Callback:</label>
+                                                <div id="callback_Date" class='input-group date callback_datepicker'>
+                                                    <input type='text' class="form-control" id="user_preferred_time_call" name="user_preferred_time_call" required/>
+                                                    <span class="input-group-addon callback_calender">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="user_preferred_time_callError error_msg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12" style="position: relative;display: flex;height: 40px;">
+                                            <div class="form-group" style="width: 100%;position: relative;display: table-footer-group;">
+                                                <div class="setsubmitbtn-prop submit_btn">
+                                                    <input type="button" class="btn btn-primary btn_common btn_white2 nri_enquiry_form" value="Submit">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<script language="javascript">
+    function toggle() {
+
+        var ele = document.getElementById("toggleText");
+
+        var text = document.getElementById("displayText");
+
+        if (ele.style.display == "block") {
+
+            ele.style.display = "none";
+
+            text.innerHTML = "<i>+</i>";
+
+        } else {
+
+            ele.style.display = "block";
+
+            text.innerHTML = "<i>-</i>";
+
+        }
+
+    };
+
+    /*function faqDtls(showId){
+           $(".faq_ans_HideDiv").hide();
+           $("#" + showId).show();
+
+       }*/
+
+
+
+    $(function () {
+		
+		
+		
+        $('.nri_enquiry_form').on('click', function (e) {
+            var save_nri_enquiry_form = $('#enquiry-form').serialize();
+
+            $('.error_msg').html('');
+            $.ajax({
+                url: 'https://www.rohanbuilders.com/nricorner/nri_enquiry_form',
+                data: save_nri_enquiry_form,
+                type: 'POST',
+                success: function (data) {
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+
+                    if (obj.status == 'success') {
+                        //window.location.href = obj.redirect;
+                        $("#show_msg").html(obj.message);
+
+                        $('#user_name').val('');
+                        $('#user_email').val('');
+                        $('#user_mobile').val('');
+                        $('#user_preferred_time_call').val('');
+                    } else if (obj.status == 'error') {
+                        $.each(obj.errors, function (key, val) {
+                            $('.' + key).html(val);
+                        });
+                        if (obj.tab != '') {
+                            $('.stab').removeClass('active');
+                            $('.tab-pane').removeClass('active');
+                            $('.' + temp.tab + 'section').addClass('active');
+                            $('.' + temp.tab + 'section').addClass('in');
+                        }
+                    } else {
+                        location.reload();
+                    }
+                }
+            });
+        });
+    });
+</script>
+            <div class="up_down_Arrow" style="z-index:8;">
+                <span class="down_arrow"><!--<img src="https://www.rohanbuilders.com/assets/frontend//images/page-down-arrow.png">-->
+                   <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 42px;line-height: 0 !Important;position: relative;display: inline;opacity: 0.5;"></i>
+                </span>
+            </div>
+
+            <footer class="offWhiteBg projectSection block-sections" data-section-name="footer" id="footer">
+            </footer>
+            
+            <script type="text/javascript"> 
+            $(function(){ $('#footer').load("footer.html"); });
+            </script>
+
+            			<span id="popupspan">
+			</span>
+			
+			<script type="text/javascript"> 
+		    $(function(){ $('#popupspan').load("popup.html"); });
+			</script>
+
+
+
+
+            <script src='../www.google.com/recaptcha/api.js'></script>
+            <style>
+
+                @media screen and (max-width: 991px){
+                    #rc-imageselect, .g-recaptcha {transform:scale(0.73);-webkit-transform:scale(0.73);transform-origin:0 0;-webkit-transform-origin:0 0;}
+                }
+            </style>
+            
+			<script type="text/javascript">
+				$(function () {
+					
+					 $('.modal').on('shown.bs.modal', function (e) {
+                        $.scrollify.disable();
+                    });
+
+                    $('.modal').on('hidden.bs.modal', function (e) {
+                        $.scrollify.enable();
+                    });
+					
+						var hash_url = window.location.hash;
+//                         $('.smoothscrolltabs li').first().addClass('active');
+//                         $('.smoothscrolltabs li').removeClass('active');
+                        if(hash_url == '') {
+                            $('.smoothscrolltabs li').first().addClass('active');
+                        } else {
+                            $('.smoothscrolltabs li a').each(function () {
+                                if($(this).attr('href') == hash_url) {
+                                    $(this).parent().addClass('active');
+                                }
+                            });
+                        }
+					
+					
+					
+                });
+				
+            </script>
+			
+<!--LeadSquared Tracking Code Start-->
+<script type="text/javascript" src="../web-in21.mxradon.com/t/Tracker.js"></script>
+<script type="text/javascript">
+      pidTracker('30088');
+</script>
+<!--LeadSquared Tracking Code End-->
+
+</body>
+
+
+<!-- Mirrored from www.rohanbuilders.com/nri-corner.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jul 2020 09:52:09 GMT -->
+</html>
